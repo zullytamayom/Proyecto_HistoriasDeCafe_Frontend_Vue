@@ -139,7 +139,7 @@ const irAPagar = async () => {
       quantity: 1
     };
 
-    const response = await fetch('http://localhost:8080/api/payments/create-preference', {
+    const response = await fetch('https://onrender.com/api/payments/create-preference', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(paymentData)
